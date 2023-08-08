@@ -34,6 +34,7 @@ Route::post('register/{slug}', [PageController::class, 'registerSubmit' ]);
 Route::get('pay/{id}', [PageController::class, 'pay'])->name('pay');
 Route::get('thanks/{id}', [PageController::class, 'thanks'])->name('thanks');
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);
+
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
